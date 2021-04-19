@@ -46,7 +46,7 @@ class Question:
         else:
             print("echec")
             with open("G:\Mon Drive\QCM\qcm_echec.yml", "r") as echecfile:
-                fichier.write(qcm[id])
+                echecfile.write(qcm[self.id])
 
         print( "" )
         print( "---" )
@@ -71,7 +71,6 @@ with open( inFile ) as file:
 # CREATION DU TEST
 # ------------------------------------------------------------------------------
 cpt=0
-
 while cpt <= len(qcm):
     Question(cpt).display()
     cpt+=1
