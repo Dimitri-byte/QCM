@@ -2,8 +2,9 @@
 - question:
     description: Question du test A
     correction: C'est la correction de la question
-    true: C'est la bonne réponse
-    false:
+    positive:
+      - C'est la bonne réponse
+    negative:
       - mauvaise réponse 1
       - mauvaise réponse 2
       - mauvaise réponse 3
@@ -11,8 +12,9 @@
 - question:
     description: Question du test B
     correction: C'est la correction de la question
-    true: C'est la bonne réponse
-    false:
+    positive:
+      - C'est la bonne réponse
+    negative:
       - mauvaise réponse 1
       - mauvaise réponse 2
       - mauvaise réponse 3
@@ -20,8 +22,9 @@
 - question:
     description: Question du test C
     correction: C'est la correction de la question
-    true: C'est la bonne réponse
-    false:
+    positive:
+      - C'est la bonne réponse
+    negative:
       - mauvaise réponse 1
       - mauvaise réponse 2
       - mauvaise réponse 3
