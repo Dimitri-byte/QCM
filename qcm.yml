@@ -1,8 +1,6 @@
 ---
-qcm:
-  
-question 1:
-  - description: Question du test A
+- question:
+    description: Question du test A
     correction: C'est la correction de la question
     true: C'est la bonne réponse
     false:
@@ -10,8 +8,17 @@ question 1:
       - mauvaise réponse 2
       - mauvaise réponse 3
 
-question 2:
-  - description: Question du test B
+- question:
+    description: Question du test B
+    correction: C'est la correction de la question
+    true: C'est la bonne réponse
+    false:
+      - mauvaise réponse 1
+      - mauvaise réponse 2
+      - mauvaise réponse 3
+
+- question:
+    description: Question du test C
     correction: C'est la correction de la question
     true: C'est la bonne réponse
     false:

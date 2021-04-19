@@ -1,10 +1,42 @@
 # -*- coding: utf-8 -*-
+
+# ------------------------------------------------------------------------------
+# IMPORT
+# ------------------------------------------------------------------------------
 import yaml
 
-# with open(r'G:\Mon Drive\QCM\qcm.yml') as file:
-#     question = yaml.load(file, Loader=yaml.FullLoader)
-#     print(question)
+# ------------------------------------------------------------------------------
+# OBJECT
+# ------------------------------------------------------------------------------
 
-with open(r'G:\Mon Drive\QCM\qcm.yml') as file:
-    question = yaml.full_load(file)
-    print(question)
+# Objet question
+class Question:
+    def __init__(self, arg):
+        pass
+    def creation(self):
+        pass
+
+# Objet test
+class Test:
+    def __init__(self, arg):
+        pass
+    def creation(self):
+        pass
+# ------------------------------------------------------------------------------
+# FICHIER D ENTREE
+# ------------------------------------------------------------------------------
+inFile = r'G:\Mon Drive\QCM\qcm.yml'
+# Lecture du fichier YAML
+with open( inFile ) as file:
+    qcm = yaml.full_load(file)
+    print(qcm[0])
+
+# ------------------------------------------------------------------------------
+# TABLEAU / BASE DE DONNEE
+# ------------------------------------------------------------------------------
+
+# Création d'un tableau
+
+# ------------------------------------------------------------------------------
+# CREATION DU TEST
+# ------------------------------------------------------------------------------
