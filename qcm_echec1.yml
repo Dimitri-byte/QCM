@@ -1,6 +1,6 @@
 question:
   correction: C'est la correction de la question
-  description: Question du test A
+  description: Question du test B
   negative:
   - "mauvaise r\xC3\xA9ponse 1"
   - "mauvaise r\xC3\xA9ponse 2"

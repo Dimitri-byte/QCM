@@ -11,16 +11,26 @@ import os
 # OBJECT
 # ------------------------------------------------------------------------------
 
-# Objet question
 class Question:
-    def __init__(self, id ):
+    def __init__(self, id, qcm, ):
         self.id = id
-        self.description = qcm[id].get("question").get("description")
-        self.correction = qcm[id].get("question").get("correction")
-        self.positive = qcm[id].get("question").get("positive")
-        self.negative = qcm[id].get("question").get("negative")
+        self.qcm = qcm
+        self.description = self.qcm[id].get("question").get("description")
+        self.correction = self.qcm[id].get("question").get("correction")
+        self.positive = self.qcm[id].get("question").get("positive")
+        self.negative = self.qcm[id].get("question").get("negative")
 
-    def display(self):
+    def Continue(self):
+        print( "\n---" )
+        print("CORRECTION")
+        print( "---" )
+        print(self.correction)
+
+        print( "\n\n\n\n------" )
+        input("appuyer sur une touche pour continuer")
+        os.system('cls')
+
+    def display(self, listeError):
         reponse= self.positive + self.negative
         random.shuffle(reponse)
 
@@ -43,26 +53,20 @@ class Question:
 
         if reponse[lettre] == self.positive[0]:
             print("succes")
+            self.Continue()
+
         else:
             print("echec")
-            with open("G:\Mon Drive\QCM\qcm_echec.yml", "r") as echecfile:
-                echecfile.write(qcm[self.id])
-
-        print( "" )
-        print( "---" )
-        print(self.correction)
-
-        print( "" )
-        print( "" )
-        print( "" )
-        print( "" )
-        input("appuyer sur une touche pour continuer")
-        os.system('cls')
+            # with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w") as echecfile1:
+            #     yaml.dump(qcm[self.id], echecfile1)
+            listeError
+            self.Continue()
 
 # ------------------------------------------------------------------------------
 # FICHIER D ENTREE
 # ------------------------------------------------------------------------------
 inFile = r'G:\Mon Drive\QCM\qcm.yml'
+echecfile=r'G:\Mon Drive\QCM\qcm_echec.yml'
 # Lecture du fichier YAML
 with open( inFile ) as file:
     qcm = yaml.full_load(file)
@@ -70,7 +74,10 @@ with open( inFile ) as file:
 # ------------------------------------------------------------------------------
 # CREATION DU TEST
 # ------------------------------------------------------------------------------
+
 cpt=0
+listeError=[]
 while cpt <= len(qcm):
-    Question(cpt).display()
+    Question(cpt, qcm, echecfile).display(listeError)
+
     cpt+=1
