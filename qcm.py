@@ -49,6 +49,7 @@ class Question:
             print(alpha[cpt] + " : " + i)
             cpt+=1
 
+        print( "--------------------------------" )
         lettre = alpha.index(input("Réponse: "))
         print( "" )
         print("reponse choisie :" + reponse[lettre])
