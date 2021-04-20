@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 # ------------------------------------------------------------------------------
 # IMPORT
 # ------------------------------------------------------------------------------
@@ -69,7 +70,7 @@ class Question:
 inFile = r'G:\Mon Drive\QCM\qcm.yml'
 echecfile=r'G:\Mon Drive\QCM\qcm_echec.yml'
 # Lecture du fichier YAML
-with open( inFile ) as file:
+with open( inFile , encoding='utf8' ) as file:
     qcm = yaml.full_load(file)
 
 # ------------------------------------------------------------------------------
@@ -82,10 +83,5 @@ while cpt < len(qcm):
     Question(cpt, qcm ).display(listeError)
     cpt+=1
 
-
-with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w", encoding='utf-8') as echecfile1:
+with open(echecfile, "w", encoding='utf-8') as echecfile1:
     yaml.dump(listeError, echecfile1)
-
-# with open(echecfile , encoding='utf-8' , "w") as echecfile1:
-#     yaml.dump(listeError, echecfile1)
-# print(listeError)
