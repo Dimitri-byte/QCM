@@ -97,6 +97,8 @@ with open( inFile , encoding='utf8' ) as file:
 
 cpt=0
 listeError=[]
+random.shuffle(qcm)
+
 while cpt < len(qcm):
     Question(cpt, qcm ).display(listeError)
     cpt+=1

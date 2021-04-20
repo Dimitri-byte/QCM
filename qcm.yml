@@ -1,30 +1,206 @@
 ---
+
+# Test 1 Grammaire
 - question:
-    description: Question du test A
-    correction: C'est la correction de la question
+    description: The report has to be sent ......... Friday 9th.
+    correction: by. expression « by + date » (= avant, au plus tard)
     positive:
-      - C'est la bonne réponse
+      - by
     negative:
-      - mauvaise réponse 1
-      - mauvaise réponse 2
-      - mauvaise réponse 3
+      - until
+      - the latest
+      - last
 
 - question:
-    description: Question du test B
-    correction: C'est la correction de la question
+    description: Sunny Beach Resorts realized many clients of ......... came because of their sports facilities.
+    correction: theirs - expression GN + of + pronom possessif (= leurs clients). La référence (« resorts ») est au pluriel et implique donc un pronom pluriel
     positive:
-      - C'est la bonne réponse
+      - theirs
     negative:
-      - mauvaise réponse 1
-      - mauvaise réponse 2
-      - mauvaise réponse 3
+      - them
+      - its
+      - their
 
 - question:
-    description: Question du test C
-    correction: C'est la correction de la question
+    description: People read about the offer in ......... the newspapers before coming to the shop.
+    correction: most of – seule cette expression rend possible la présence d’un article tel que « the » ici. Les autres expressions proposées sont impossibles avec « the » (b) ou incorrectes car incomplètes (c et d)
     positive:
-      - C'est la bonne réponse
+      - most of
     negative:
-      - mauvaise réponse 1
-      - mauvaise réponse 2
-      - mauvaise réponse 3
+      - most
+      - most the
+      - the most
+
+- question:
+    description: It was a great honor for ......... to have been chosen to work on this research project with you.
+    correction: us. pronom personnel compl. d’objet. a. est un adj. possessif ; b. est un pronom possessif ; d. est un pronom personnel sujet (utilisable UNIQUEMENT comme sujet)
+    positive:
+      - us
+    negative:
+      - your
+      - hers
+      - we
+
+- question:
+    description: The government decided ......... the minimum wage levels to motivate consumption.
+    correction: to lower – expression « decide TO ». Le contexte de l’énoncé suggère le verbe « to lower » (=  baisser) plutôt que le verbe « to increase » (= augmenter)
+    positive:
+      - to lower
+    negative:
+      - lowering
+      - to increase
+      - increasing
+
+- question:
+    description: The report should ......... completed by Saturday.
+    correction: have been – un modal est toujours suivi d’une base verbale. « have been » est le seul possible car « have » + V au participe passé (a. « be » n’est pas au part. passé) et il s’agit d’un passif (présence de « by ») donc nécessité de la présence du verbe « be » + verbe d’action au part. passé (b. ne présente ni V. BE ni participe passé ; c. présent un aspect en BE + V-ing)
+    positive:
+      - have been
+    negative:
+      - have be
+      - be having
+      - have
+
+- question:
+    description: Tom’s presentation of the project today was much ......... than expected.
+    correction: better – comparatif de l’adj. « good » Ö « Better than » (« than » se trouve déjà dans la phrase)
+    positive:
+      - better
+    negative:
+      - good
+      - gooder
+      - best
+
+- question:
+    description: Had we known there was such a big traffic jam, we......... the motorway.
+    correction: would have taken. La phrase est au passé antérieur (« had we known »). La concordance des temps implique un passé antérieur (had + Verbe au participe passé) pour le reste de la phrase. Attention ; les modaux sont suivis d’une base verbale (ici, « have » et non « had »)
+    positive:
+      - would have taken
+    negative:
+      - would had taken
+      - would take
+      - would have take
+
+- question:
+    description: It would have been ......... to consider this option.
+    correction: interesting (= intéressant (adj.)) ; interested = intéressé (adj.) ; interest = verbe ou nom ; interestingly = adverbe
+    positive:
+      - interesting
+    negative:
+      - interested
+      - interest
+      - interestingly
+
+- question:
+    description: A message ......... on his home answering machine yesterday; he should know by now the results of the interview.
+    correction: was left – il s’agit d’un passif (Verbe BE + verbe d’action au participe passé) – « a message » n’est pas l’acteur de l’action de partir (verbe « leave » ici au participe passé « left »)
+    positive:
+      - was left
+    negative:
+      - has left
+      - left
+      - was leaving
+
+# Test 2 Grammaire
+
+- question:
+    description: It is possible to avoid bankruptcy ......... the head of the company agreed to make any cuts in the budget
+    correction: provided – l’expression est suivie de « that », présent ici dans la phrase. a et b sont impossibles car la syntaxe interdit un groupe verbal (S+V) ; c. la syntaxe rend impossible l’utilisation d’une simple base verbale
+    positive:
+      - provided
+    negative:
+      - is providing
+      - provide
+      - was provided
+
+- question:
+    description: The location of the machines in the factory …………… many advantages
+    correction: has – le sujet est à la 3e personne du singulier (« the place » Ö « of the machines » est un complément du nom « place », il ne conditionne pas l’accord du verbe)
+    positive:
+      - has
+    negative:
+      - is
+      - have
+      - are
+
+- question:
+    description: This website assures that ......... credit card information is kept secure during and after purchase.
+    correction: your. – adj. possessif devant un GN (ici « credit card »). « you » est un pronom personnel sujet ; « yours » est un pronom possessif, il ne peut jamais être suivi d’un GN ; yourself est un pronom réfl échi
+    positive:
+      - your
+    negative:
+      - you
+      - yours
+      - yourself
+
+- question:
+    description: The police had diffi culties finding out ............ was responsible for the robbery of the shop.
+    correction: who – se réfère à une personne. « which » aurait été possible s’il y avait eu un choix ou une référence antérieure à la personne concernée
+    positive:
+      - who
+    negative:
+      - what
+      - whose
+      - which
+
+
+- question:
+    description: The Fish Soup Restaurant should produce some …………… to be better known.
+    correction: Publicity (= publicité), car seul un nom est possible à l’endroit laissé libre dans la syntaxe. L’autre nom proposé « publication » (= publication), n’est pas approprié selon le sens de la phrase
+    positive:
+      - publicity
+    negative:
+      - publicize
+      - publication
+      - publically
+
+  - question:
+      description: Hardly ......... of these offers are really worth it.
+      correction: « any » s’utilise dans une phrase négative. Ici, la forme négative apparaît par l’adverbe « hardly » qui a une valeur de négation
+      positive:
+        - any
+      negative:
+        - few
+        - some
+        - none
+
+  - question:
+      description: As head of the sales department, Mark will ......... full responsibility for purchase negotiations.
+      correction: have – le modal « will » est suivi d’une base verbale. d. suggère une phrase au passé ce qui est en contradiction avec la valeur de future de « will ». La phrase aurait-elle été au passé, il eût fallu utiliser le modal « would », par exemple
+      positive:
+        - have
+      negative:
+        - to have
+        - having
+        - have had
+
+  - question:
+      description:
+      correction: to welcoming. Expression « to look forward to + V-ing » (= avoir hâte de)
+      positive:
+        - to welcoming
+      negative:
+        - to welcome
+        - welcoming
+        - having welcome
+
+  - question:
+      description: New York’s Central Station is ………….. train stations in the USA
+      correction: one of the busiest
+      positive:
+        - one of the busiest
+      negative:
+        - of the busiest one
+        - the one busiest of
+        - one of the busiest
+
+
+  - question:
+      description: Andrew’s doctor recommended that he ............. the treatment until the cough had completely stopped.
+      correction: continued. Il s’agit d’un discours rapporté. Le verbe de la proposition étant au passé ; « recommended », la concordance des temps oblige l’utilisation d’un passé dans la proposition « continued »
+      positive:
+        - continued
+      negative:
+        - is continuing
+        - has continued
+        - continue

@@ -1,18 +1,10 @@
 - question:
-    correction: C'est la correction de la question
-    description: Question du test A
+    correction: "interesting (= int\xE9ressant (adj.)) ; interested = int\xE9ress\xE9\
+      \ (adj.) ; interest = verbe ou nom ; interestingly = adverbe"
+    description: It would have been ......... to consider this option.
     negative:
-    - "mauvaise r\xE9ponse 1"
-    - "mauvaise r\xE9ponse 2"
-    - "mauvaise r\xE9ponse 3"
+    - interested
+    - interest
+    - interestingly
     positive:
-    - "C'est la bonne r\xE9ponse"
-- question:
-    correction: C'est la correction de la question
-    description: Question du test C
-    negative:
-    - "mauvaise r\xE9ponse 1"
-    - "mauvaise r\xE9ponse 2"
-    - "mauvaise r\xE9ponse 3"
-    positive:
-    - "C'est la bonne r\xE9ponse"
+    - interesting
