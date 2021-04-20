@@ -7,7 +7,7 @@
 import yaml
 import random
 import os
-
+from colorama import Fore, Back, Style
 
 # ------------------------------------------------------------------------------
 # OBJECT
@@ -30,7 +30,9 @@ class Question:
 
         print( "\n\n\n\n------" )
         input("appuyer sur une touche pour continuer")
+        print(Style.RESET_ALL)
         os.system('cls')
+
 
     def display(self, listeError):
         reponse= self.positive + self.negative
@@ -40,30 +42,45 @@ class Question:
         print( "| " + "QUESTION " + str(self.id) + " |" )
         print( "---" )
 
+        print( "\n" )
         print( self.description )
-        print( "------" )
+        print( "\n\n--------------------------------" )
 
         cpt=0
-        alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+        alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ",""]
         for i in reponse:
             print(alpha[cpt] + " : " + i)
             cpt+=1
 
+
         print( "--------------------------------" )
-        lettre = alpha.index(input("Réponse: "))
-        print( "" )
-        print("reponse choisie :" + reponse[lettre])
+        drag = False
+        while drag == False:
+            rep = str(input("Réponse: "))
+            for i in alpha:
+                if rep == i:
+                    drag = True
 
-        if reponse[lettre] == self.positive[0]:
-            print("succes")
-            self.Continue()
-
-        else:
-            print("echec")
-            # with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w") as echecfile1:
-            #     yaml.dump(qcm[self.id], echecfile1)
+        if rep == "":
             listeError.append(self.qcm[self.id])
             self.Continue()
+        elif alpha.index(rep) >= len(reponse) :
+            listeError.append(self.qcm[self.id])
+            self.Continue()
+        else:
+            lettre = alpha.index(rep)
+            print("reponse choisie :" + reponse[lettre])
+            if reponse[lettre] == self.positive[0]:
+                print(Fore.GREEN + "\n\n\nCORRECT")
+                self.Continue()
+            else:
+                print(Fore.RED + "\n\n\nECHEC")
+                # with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w") as echecfile1:
+                #     yaml.dump(qcm[self.id], echecfile1)
+                listeError.append(self.qcm[self.id])
+                self.Continue()
+
+
 
 # ------------------------------------------------------------------------------
 # FICHIER D ENTREE

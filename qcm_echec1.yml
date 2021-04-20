@@ -9,7 +9,7 @@
     - "C'est la bonne r\xE9ponse"
 - question:
     correction: C'est la correction de la question
-    description: Question du test C
+    description: Question du test B
     negative:
     - "mauvaise r\xE9ponse 1"
     - "mauvaise r\xE9ponse 2"
