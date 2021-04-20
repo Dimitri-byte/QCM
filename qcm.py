@@ -7,12 +7,13 @@ import yaml
 import random
 import os
 
+
 # ------------------------------------------------------------------------------
 # OBJECT
 # ------------------------------------------------------------------------------
 
 class Question:
-    def __init__(self, id, qcm, ):
+    def __init__(self, id, qcm ):
         self.id = id
         self.qcm = qcm
         self.description = self.qcm[id].get("question").get("description")
@@ -59,7 +60,7 @@ class Question:
             print("echec")
             # with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w") as echecfile1:
             #     yaml.dump(qcm[self.id], echecfile1)
-            listeError
+            listeError.append(self.qcm[self.id])
             self.Continue()
 
 # ------------------------------------------------------------------------------
@@ -77,7 +78,14 @@ with open( inFile ) as file:
 
 cpt=0
 listeError=[]
-while cpt <= len(qcm):
-    Question(cpt, qcm, echecfile).display(listeError)
-
+while cpt < len(qcm):
+    Question(cpt, qcm ).display(listeError)
     cpt+=1
+
+
+with open(r'G:\Mon Drive\QCM\qcm_echec1.yml' , "w", encoding='utf-8') as echecfile1:
+    yaml.dump(listeError, echecfile1)
+
+# with open(echecfile , encoding='utf-8' , "w") as echecfile1:
+#     yaml.dump(listeError, echecfile1)
+# print(listeError)
