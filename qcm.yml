@@ -105,7 +105,7 @@
 
 - question:
     description: It is possible to avoid bankruptcy ......... the head of the company agreed to make any cuts in the budget
-    correction: provided – l’expression est suivie de « that », présent ici dans la phrase. a et b sont impossibles car la syntaxe interdit un groupe verbal (S+V) ; c. la syntaxe rend impossible l’utilisation d’une simple base verbale
+    correction: provided – l’expression est suivie de « that », présent ici dans la phrase. "is providing" et "was provided" sont impossibles car la syntaxe interdit un groupe verbal (S+V) ; "provide". la syntaxe rend impossible l’utilisation d’une simple base verbale
     positive:
       - provided
     negative:
@@ -134,7 +134,7 @@
       - yourself
 
 - question:
-    description: The police had diffi culties finding out ............ was responsible for the robbery of the shop.
+    description: The police had difficulties finding out ............ was responsible for the robbery of the shop.
     correction: who – se réfère à une personne. « which » aurait été possible s’il y avait eu un choix ou une référence antérieure à la personne concernée
     positive:
       - who
@@ -154,53 +154,464 @@
       - publication
       - publically
 
-  - question:
-      description: Hardly ......... of these offers are really worth it.
-      correction: « any » s’utilise dans une phrase négative. Ici, la forme négative apparaît par l’adverbe « hardly » qui a une valeur de négation
-      positive:
-        - any
-      negative:
-        - few
-        - some
-        - none
+- question:
+    description: Hardly ......... of these offers are really worth it.
+    correction: « any » s’utilise dans une phrase négative. Ici, la forme négative apparaît par l’adverbe « hardly » qui a une valeur de négation
+    positive:
+      - any
+    negative:
+      - few
+      - some
+      - none
 
-  - question:
-      description: As head of the sales department, Mark will ......... full responsibility for purchase negotiations.
-      correction: have – le modal « will » est suivi d’une base verbale. d. suggère une phrase au passé ce qui est en contradiction avec la valeur de future de « will ». La phrase aurait-elle été au passé, il eût fallu utiliser le modal « would », par exemple
-      positive:
-        - have
-      negative:
-        - to have
-        - having
-        - have had
+- question:
+    description: As head of the sales department, Mark will ......... full responsibility for purchase negotiations.
+    correction: have – le modal « will » est suivi d’une base verbale. d. suggère une phrase au passé ce qui est en contradiction avec la valeur de future de « will ». La phrase aurait-elle été au passé, il eût fallu utiliser le modal « would », par exemple
+    positive:
+      - have
+    negative:
+      - to have
+      - having
+      - have had
 
-  - question:
-      description:
-      correction: to welcoming. Expression « to look forward to + V-ing » (= avoir hâte de)
-      positive:
-        - to welcoming
-      negative:
-        - to welcome
-        - welcoming
-        - having welcome
+- question:
+    description: Fly Sky Airlines look forward ......... you soon on one of their fl ights
+    correction: to welcoming. Expression « to look forward to + V-ing » (= avoir hâte de)
+    positive:
+      - to welcoming
+    negative:
+      - to welcome
+      - welcoming
+      - having welcome
 
-  - question:
-      description: New York’s Central Station is ………….. train stations in the USA
-      correction: one of the busiest
-      positive:
-        - one of the busiest
-      negative:
-        - of the busiest one
-        - the one busiest of
-        - one of the busiest
+- question:
+    description: New York’s Central Station is ………….. train stations in the USA
+    correction: one of the busiest
+    positive:
+      - one of the busiest
+    negative:
+      - of the busiest one
+      - the one busiest of
+      - the busiest one of
 
 
-  - question:
-      description: Andrew’s doctor recommended that he ............. the treatment until the cough had completely stopped.
-      correction: continued. Il s’agit d’un discours rapporté. Le verbe de la proposition étant au passé ; « recommended », la concordance des temps oblige l’utilisation d’un passé dans la proposition « continued »
-      positive:
-        - continued
-      negative:
-        - is continuing
-        - has continued
-        - continue
+- question:
+    description: Andrew’s doctor recommended that he ............. the treatment until the cough had completely stopped.
+    correction: continued. Il s’agit d’un discours rapporté. Le verbe de la proposition étant au passé ; « recommended », la concordance des temps oblige l’utilisation d’un passé dans la proposition « continued »
+    positive:
+      - continued
+    negative:
+      - is continuing
+      - has continued
+      - continue
+
+# Test 3 Grammaire
+
+- question:
+    description: This museum is not as interesting ………… I thought it would be
+    correction: as – as + adjectif + as = égalité
+    positive:
+      - as
+    negative:
+      - than
+      - for
+      - like
+
+- question:
+    description: They spent their holidays in an all ......... resort in Mexico.
+    correction: inclusive. Expression appropriée La logique grammaticale rendrait cependant possible un adjectif en –ed (participe passé) Ö « tout inclus » (passif)
+    positive:
+      - inclusive
+    negative:
+      - included
+      - including
+      - incluses
+
+- question:
+    description: If the client ………… not satisfied, tell him to contact the main office.
+    correction: is – la phrase est au présent (« tell »), on s’attend donc à un verbe conjugué au présent ; "has been". « has been » est un présent mais au passif, ce qui n’irait pas dans le sens de la phrase
+    positive:
+      - is
+    negative:
+      - be
+      - was
+      - has been
+
+- question:
+    description: Inflation is high and ………… .
+    correction: so is unemployment (= chômage)
+    positive:
+      - so is unemployment
+    negative:
+      - so unemployment is
+      - also unemployment is
+      - so neither is unemployment
+
+- question:
+    description: Sarah hasn’t been at work ………… a week because of a bad case of flue.
+    correction: for – present perfect (hasn’t been) + for (depuis/pendant + durée)
+    positive:
+      - for
+    negative:
+      - since
+      - until
+      - from
+
+- question:
+    description: Employees ......... performance is considered weak may have an interview with their manager.
+    correction: whose – possessif ; il s’agit de la performance des employés. « who » est un pronom relatif référent à une personne ; « whom » est un pronom relatif précédé d’une préposition ; « which » est un pronom relatif suggérant un choix et sous-entendant une référence antérieure
+    positive:
+      - whose
+    negative:
+      - who
+      - whom
+      - which
+
+- question:
+    description: This is one of the best …………. the company has ever received.
+    correction: propositions – l’expression « one of the » appelle un pluriel à sa suite
+    positive:
+      - propositions
+    negative:
+      - proposition
+      - propose
+      - proposes
+
+- question:
+    description: ......... rules have changed, others not.
+    correction: some – suggestion de choix possible (« others not ») donc « all » n’est pas possible. « every » et « each » sont toujours suivis d’un singulier (or « rules » est au pluriel)
+    positive:
+      - Some
+    negative:
+      - Every
+      - All
+      - Some
+
+- question:
+    description: The two offers were considered ………… by the team.
+    correction: equally – la syntaxe suggère la présence d’un adverbe à cette place. La réponse "equally". est la seule à proposer un adverbe. Les réponses "equal". et "equals". auraient impliqué une comparaison introduite par « as »
+    positive:
+      - equally
+    negative:
+      - equality
+      - equal
+      - equals
+
+- question:
+    description:
+    correction:  lend – Les modaux sont suivis d’une base verbale ; « can » + base verbale « lend »
+    positive:
+      - lend
+    negative:
+      - lent
+      - lends
+      - lending
+
+# Test 4 Grammaire
+
+- question:
+    description: We ………… time to finish the test
+    correction: had no – la forme négative « no » porte sur le nom « time ». « not have » n’est pas une structure acceptable. « hadn’t no » n’est pas possible car la double négation n’est pas admise. « have not » n’est pas possible car la forme négative portant sur le verbe « have » nécessite « got » ensuite
+    positive:
+      - had no
+    negative:
+      - not have
+      - hadn’t no
+      - have not
+
+- question:
+    description: This is the best film I have………… seen in my life.
+    correction: ever – « never » signifierait que le film n’a JAMAIS été vu
+    positive:
+      - ever
+    negative:
+      - never
+      - already
+      - just
+
+- question:
+    description: If they had started later, they ………….. the deadline.
+    correction: wouldn’t have met – la phrase est au passé (« had started ») alors que « will » n’est possible que dans une phrase au présent. « would have meet » n’est pas possible « meet » devant être au participe passé après « have ». Le sens de la réponse "would have meet". n’est pas approprié en raison du sens de la phrase
+    positive:
+      - wouldn’t have met
+    negative:
+      - would have meet
+      - would have met
+      - will have met
+
+- question:
+    description: They should have considered this negative feedback much ……………… .
+    correction: earlier – comparatif de superiorité (suggéré par le sens de la phrase) avec un adjectif se terminant par –y Ö ier
+    positive:
+      - earlier
+    negative:
+      - too early
+      - more earlier
+      - early
+
+
+- question:
+    description:
+    correction: check – modal + base verbale
+    positive:
+      - check
+    negative:
+      - checking
+      - checked
+      - checks
+
+- question:
+    description: Let’s …………. at his office tomorrow at 9.
+    correction: meet – seule une base verbale peut apparaître après l’expression « let’s »
+    positive:
+      - meet
+    negative:
+      - meeting
+      - met
+      - will meet
+
+- question:
+    description: It is believed that women spend more of …………….. time chatting than men.
+    correction: their – adjectif possessif à la 3e personne du pluriel (référent à « women ») précédent le nom « time »
+    positive:
+      - their
+    negative:
+      - her
+      - hers
+      - theirs
+
+- question:
+    description: The president will announce his latest ………….. next Tuesday.
+    correction: decisions – la place laissée libre dans la phrase, précédée d’un adjectif possessif (« his ») suggère la présence d’un nom ; « decisions » est le seul nom proposé dans la liste
+    positive:
+      - decisions
+    negative:
+      - decided
+      - decisive
+      - decides
+
+- question:
+    description: Alycia believed ………… when they told her about what happened to Mike.
+    correction: them – pronom COD. Le pronom « they » ne peut être que sujet ; l’adjectif possessif « their » se trouve devant un nom ; « theirs » est un pronom possessif
+    positive:
+      - them
+    negative:
+      - they
+      - their
+      - theirs
+
+- question:
+    description: Confidence is sometimes ………………, especially to naïve people.
+    correction: misleading – après l’auxiliaire BE le verbe peut prendre l’aspect –en ou –ing. Ici le sens suggère V-ing Ö c’est la confiance (« confidence ») qui peut parfois être « trompeuse » (« misleading ») et non « être trompée », ce qui aurait suggéré un passif et donc un V-en
+    positive:
+      - misleading
+    negative:
+      - misled
+      - mislead
+      - to mislead
+
+# Test 5 Grammaire
+
+- question:
+    description: This travel agency............ as the best one for honeymoons.
+    correction: has always been considered
+    positive:
+      - has always been considered
+    negative:
+      - always has been considered
+      - has been always considered
+      - has been considered always
+
+- question:
+    description: All the leaflets were .............. at the station within half an hour.
+    correction: given out - il s'agit d'un passif ; les tracts (« leaflets ») subissent l'action  d'être distibués («given out ») + la présence de «were » («be» au prétérit) confirme la voie passive [le verbe d'action au participe passé est placé après le verbe BE (ici « were »)]
+    positive:
+      - given out
+    negative:
+      - gave
+      - given in
+      - give out
+
+- question:
+    description: Crime has ............. in recent years.
+    correction: been growing
+    positive:
+      - been growing
+    negative:
+      - grow
+      - been grown
+      - growing
+
+- question:
+    description: They will receive the latest figures when Lucy ................ them ready.
+    correction: has - la phrase est au présent comme l'indique l'utilisation du modal  « will » (d.impossible) et le sujet « Lucy» est à la 3e pers. du singulier ("have".impossible). Enfin, on ne met jamais le modal « will » dans une  proposition déclarative introduite par «when» ("will have". impossible)
+    positive:
+      - has
+    negative:
+      - will have
+      - have
+      - would have
+
+- question:
+    description: The assistant prepared ............. coffee for all of us for the break.
+    correction: some - «coffee » étant un indénombrable, «some» est la seule possibilité grammaticalement correcte proposée ici
+    positive:
+      - some
+    negative:
+      - a
+      - any
+      - many
+
+- question:
+    description: The article was taken from this famous ..........
+    correction: review – seule possibilité en raison du sens (revue) et de la présence de la  préposition « from » (« review writer» aurait été précédé par la préposition «by»)
+    positive:
+      - review
+    negative:
+      - review writer
+      - reviewed
+      - reviewing
+
+- question:
+    description: Customer feedback helps to improve the quality of ................ products.
+    correction: our - adjectif possessif précédent le nom « products »
+    positive:
+      - our
+    negative:
+      - us
+      - them
+      - they
+
+- question:
+    description: If Arnold's friends had gone with him on that trip, they would ............... a great holiday!
+    correction: have enjoyed - la phrase est au passé antérieur (« had gone », donc «would » doit être suivi de la structure grammaticale « have + verbe au participe passé »)
+    positive:
+      - have enjoyed
+    negative:
+      - enjoyed
+      - enjoy
+      - had enjoyed
+
+- question:
+    description: A workshop was organized to create a plan for ...................... the company's compliance with the new regulations.
+    correction: ensuring - for + V-ing
+    positive:
+      - ensuring
+    negative:
+      - ensure
+      - to ensure
+      - ensured
+
+- question:
+    description: You are entering the .................. area of the building.
+    correction: most secure - superlatif avec un adjectif de plus de deux sulla base + most+ adj.
+    positive:
+      - most secure
+    negative:
+      - securest
+      - securing
+      - most securing
+
+# Test 6 Grammaire
+
+- question:
+    description: The shop .................. his new TV.
+    correction: gave him an important discount on
+    positive:
+      - gave him an important discount on
+    negative:
+      - gave an important discount on
+      - gave to him on an important discount
+      - gave on him an important discount
+
+- question:
+    description: The nurse is helping the man ................. in the corridor of the hospital.
+    correction: walk - expression «help someone + base verbale »
+    positive:
+      - walk
+    negative:
+      - walking
+      - be walked
+      - walks
+
+- question:
+    description: Molly's Tea Room is the ..................... place to have cake in town.
+    correction: nicest - superlatif suggéré par la présence de l'article «the»
+    positive:
+      - nicest
+    negative:
+      - nicer
+      - nicely
+      - nice
+
+- question:
+    description: They found ............... bread in the shop. Everything had been sold out.
+    correction: no - la négation concerne ici le nom «bread». Rappel ; lorsque la négation porte sur le verbe, on trouve un auxiliaire + «not»
+    positive:
+      - no
+    negative:
+      - not
+      - some
+      - none
+
+- question:
+    description: Many people agreed .................. to participate to this survey.
+    correction: enthusiastically - adverbe
+    positive:
+      - enthusiastically
+    negative:
+      - enthusiastical
+      - enthousiasm
+      - enthousiastic
+
+- question:
+    description: The lecturers told the secretary they are willing to operate the audiovisual equipment .........
+    correction: themselves = eux-mêmes
+    positive:
+      - themselves
+    negative:
+      - herself
+      - for them
+      - by her
+
+- question:
+    description: ............... request must be faxed or e. mailed directly to the head office.
+    correction: her - adjectif possessif précédent le nom «request ». Les autres propositions sont des pronoms et ne peuvent donc précéder le nom «request»
+    positive:
+      - Her
+    negative:
+      - She
+      - Hers
+      - Herself
+
+- question:
+    description: Baker & Co published its numbers yesterday. Wheat's should publish .................. by Tuesday next week.
+    correction: its - pronom possessif référent à la compagnie «Wheat's »
+    positive:
+      - its
+    negative:
+      - it
+      - their
+      - hers
+
+- question:
+    description: Polite people knock at the door before .......... .... a room or an office.
+    correction:  entering - le verbe qui suit l'expression «before » se met à la forme en -ing
+    positive:
+      - entering
+    negative:
+      - having entered
+      - enter
+      - entered
+
+- question:
+    description: The head of sales ........... to another branch.
+    correction: went- «gone» et «going » sont des aspects nécessitant la présence d'un auxiliaire BE (absent ici). «go» n'est pas possible car le sujet «the head> est à la troisième personne du singulier (il aurait fallu avoir «goes » si le verbe avait été au présent)
+    positive:
+      - went
+    negative:
+      - gone
+      - go
+      - going
+
+# Test 7 Grammaire
